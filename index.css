@@ -365,7 +365,16 @@ main {
 .work-examples ul {
   display: flex;
 }
-.hmtl-academy {
+.work-examples img {
+  opacity: 0.3;
+}
+.work-examples img:hover {
+  opacity: 1;
+}
+.work-examples img:active {
+  opacity: 0.1;
+}
+/* .hmtl-academy {
   content: url(./img/logo-1.png.png);
 }
 .hmtl-academy:hover {
@@ -373,8 +382,8 @@ main {
 }
 .hmtl-academy:active {
   content: url(./img/logo-1.png\ copy\ 2.png);
-}
-.barbershop-borodinski {
+} */
+/* .barbershop-borodinski {
   content: url(./img/logo-2.png.jpg);
 }
 .barbershop-borodinski:hover {
@@ -400,7 +409,7 @@ main {
 }
 .mishka:active {
   content: url(./img/logo-4.png\ copy\ 2.png);
-}
+} */
 .work-examples li:nth-child(1) {
   margin-left: 31px;
   margin-top: 62px;
