@@ -449,6 +449,7 @@ footer {
   position: relative;
 }
 .address-container {
+  pointer-events: none;
   position: absolute;
   display: flex;
   align-items: flex-start;
@@ -460,6 +461,7 @@ footer {
   margin: auto;
 }
 .address-section {
+  pointer-events: all;
   padding-top: 49px;
   padding-left: 50px;
   background-color: white;
@@ -501,6 +503,7 @@ footer {
   color: white;
 }
 .address-container img {
+  pointer-events: all;
   user-select: none;
   margin-top: 35px;
   margin-left: 361px;
