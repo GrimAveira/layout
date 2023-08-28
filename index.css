@@ -442,24 +442,27 @@ main {
   bottom: 57px;
 }
 footer {
+  padding-top: 80px;
   margin: 0 auto;
 }
 .map-container {
-  width: 100%;
-  margin-top: 80px;
   position: relative;
 }
 .address-container {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
   padding: 0px 140px;
   width: 1440px;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 54px;
+  margin: auto;
 }
 .address-section {
-  position: absolute;
-  padding-top: 48px;
+  padding-top: 49px;
   padding-left: 50px;
   background-color: white;
-  bottom: 60px;
   width: 319px;
   height: 308px;
 }
@@ -498,9 +501,9 @@ footer {
   color: white;
 }
 .address-container img {
-  position: absolute;
-  margin-left: 680px;
-  bottom: 144px;
+  user-select: none;
+  margin-top: 35px;
+  margin-left: 361px;
 }
 .lower-footer {
   padding: 62px 140px 70px 140px;
