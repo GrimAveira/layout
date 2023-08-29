@@ -11,6 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let modalContainer = document.querySelector(".modal-container");
+        let scrollbar = window.innerWidth - document.body.clientWidth + "px";
+        document
+          .querySelector(".open-modal")
+          .addEventListener("click", function () {
+            modalContainer.style.visibility = "visible";
+            document.body.style.overflow = "hidden";
+            document.body.style.marginRight = scrollbar;
+          });
+        document
+          .querySelector(".close-modal")
+          .addEventListener("click", function () {
+            modalContainer.style.visibility = "hidden";
+            document.body.style.overflow = "visible";
+            document.body.style.marginRight = "0px";
+          });
+        document
+          .querySelector("#submit-button")
+          .addEventListener("click", function () {
+            modalContainer.style.visibility = "hidden";
+            document.body.style.overflow = "visible";
+            document.body.style.marginRight = "0px";
+          });
+      });
+    </script>
   </head>
   <body>
     <header class="header">
@@ -245,11 +272,66 @@
               ул. Б. Конюшенная, д. 19/8
             </p>
             <p class="contacts">тел. +7 (812) 275-75-75</p>
-            <a href="#">Напишите нам</a>
+            <button class="open-modal">Напишите нам</button>
           </section>
           <img src="./img/map-marker.png.png" alt="изображение" />
         </div>
       </section>
+
+      <div class="modal-container">
+        <div class="modal-window">
+          <div class="content-head">
+            <h2>Напишите нам</h2>
+            <button class="close-modal" title="close modal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <path
+                  fill="#FB565A"
+                  d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="content-body">
+            <form action="">
+              <div class="user-data">
+                <h3 class="visually-hidden">Данные пользователя</h3>
+                <div class="user-name">
+                  <span>Ваше имя:</span>
+                  <input
+                    type="text"
+                    placeholder="Имя Фамилия"
+                    pattern="^[А-Я][а-яё]*$"
+                  />
+                </div>
+                <div class="user-mail">
+                  <span>Ваш e-mail:</span>
+                  <input
+                    type="text"
+                    placeholder="email@example.com"
+                    pattern="([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)"
+                  />
+                </div>
+              </div>
+              <div class="user-text">
+                <span>Текст письма:</span>
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="В свободной форме"
+                  pa
+                ></textarea>
+              </div>
+              <button id="submit-button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="lower-footer">
         <ul>
           <li>
