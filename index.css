@@ -327,7 +327,7 @@ main {
 }
 .about ul {
   margin-top: 24px;
-  margin-left: 12px;
+  margin-left: 1px;
   line-height: 24px;
 }
 .about li {
@@ -340,11 +340,14 @@ main {
   margin-bottom: 24px;
 }
 .about li::before {
-  content: " ";
-  border-left: 4px solid #fb565a;
-  transform: rotate(90deg) scale(0.5, 1);
-
-  margin-right: 21px;
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  margin-top: 11px;
+  margin-right: 10px;
 }
 .achivments {
   margin-top: 40px;
