@@ -115,9 +115,11 @@ nav a:active {
   margin-left: 46px;
 }
 nav {
-  margin-top: 15px;
+  padding-top: 25px;
   display: flex;
-  align-items: center;
+}
+nav li {
+  height: 35px;
 }
 nav li:nth-child(5) {
   margin-left: 244px;
@@ -400,42 +402,6 @@ main {
 .work-examples img:active {
   opacity: 0.1;
 }
-/* .hmtl-academy {
-  content: url(./img/logo-1.png.png);
-}
-.hmtl-academy:hover {
-  content: url(./img/logo-1.png\ copy.png);
-}
-.hmtl-academy:active {
-  content: url(./img/logo-1.png\ copy\ 2.png);
-} */
-/* .barbershop-borodinski {
-  content: url(./img/logo-2.png.jpg);
-}
-.barbershop-borodinski:hover {
-  content: url(./img/logo-2.png\ copy.jpg);
-}
-.barbershop-borodinski:active {
-  content: url(./img/logo-2.png\ copy\ 2.jpg);
-}
-.pink {
-  content: url(./img/logo-3.png.png);
-}
-.pink:hover {
-  content: url(./img/logo-3.png\ copy.png);
-}
-.pink:active {
-  content: url(./img/logo-3.png\ copy\ 2.png);
-}
-.mishka {
-  content: url(./img/logo-4.png.png);
-}
-.mishka:hover {
-  content: url(./img/logo-4.png\ copy.png);
-}
-.mishka:active {
-  content: url(./img/logo-4.png\ copy\ 2.png);
-} */
 .work-examples li:nth-child(1) {
   margin-left: 31px;
   margin-top: 62px;
