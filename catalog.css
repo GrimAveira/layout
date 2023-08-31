@@ -81,9 +81,11 @@ nav a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 355px;
 }
-.header-upper-container {
+.header-container {
   width: 1440px;
+
   padding: 49px 140px 0px 140px;
   display: flex;
   font-weight: 500;
@@ -94,21 +96,22 @@ nav a:active {
 .logo:active {
   fill: #a6a6a6;
 }
-.header-upper-container ul {
+.header-container ul {
   margin-top: 1px;
   margin-left: 160px;
   display: flex;
 }
-.header-upper-container li:nth-child(1) {
+.header-container li:nth-child(1) {
   margin-left: 42px;
 }
-.header-upper-container li:nth-child(2) {
+.header-container li:nth-child(2) {
   margin-left: 45px;
 }
-.header-upper-container li:nth-child(3) {
+.header-container li:nth-child(3) {
+  border-bottom: 2px solid #fb565a;
   margin-left: 48px;
 }
-.header-upper-container li:nth-child(4) {
+.header-container li:nth-child(4) {
   margin-left: 46px;
 }
 nav {
@@ -135,111 +138,11 @@ nav li:nth-child(5) {
 .basket a {
   margin-left: 25px;
 }
-.header-lower-container {
-  width: 1440px;
-  display: flex;
-  height: 431px;
-}
-.header-lower-container input {
-  display: none;
-}
-.controls {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 891px;
-  top: 431px;
-}
-.radiobutton {
-  margin-left: 17px;
-  appearance: none;
-  position: relative;
-  height: 18px;
-  width: 18px;
-  background: white;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 1;
-}
-#slide1:checked ~ .controls .radiobutton:nth-of-type(1)::after,
-#slide2:checked ~ .controls .radiobutton:nth-of-type(2)::after,
-#slide3:checked ~ .controls .radiobutton:nth-of-type(3)::after {
-  content: "";
-  border: 2px solid #c1c1c1;
-  height: 4px;
-  width: 4px;
-  top: 5px;
-  left: 5px;
-  display: block;
-  position: relative;
-  border-radius: 50%;
-}
-.slides {
-  display: flex;
-  position: absolute;
-  opacity: 0;
-  z-index: 0;
-}
-.slides article {
-  margin-left: 140px;
+.header h2 {
   margin-top: 78px;
-}
-.slogan {
+  font-weight: 500;
   font-size: 55px;
-  font-weight: 500;
   line-height: 55px;
-  margin: 0;
-}
-.slogan-explanation {
-  font-weight: 400;
-  margin-top: 26px;
-  margin-left: 1px;
-  line-height: 24px;
-}
-.slides a {
-  opacity: 1;
-  margin-top: 40px;
-  width: 240px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-
-  text-transform: uppercase;
-  font-weight: 500;
-  line-height: 18px;
-
-  background: #fb565a;
-  color: white;
-}
-.slides a:hover {
-  background: #e74246;
-}
-.slides a:active {
-  box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
-  background: #d7373b;
-  color: #e37376;
-}
-.slide1 img {
-  margin-top: 18px;
-  margin-left: 54px;
-}
-.slide2 img {
-  margin-left: 636px;
-  position: absolute;
-  margin-top: 1px;
-}
-.slide3 img {
-  margin-left: 541px;
-  position: absolute;
-  margin-top: 19px;
-}
-#slide1:checked ~ .slider .slide1,
-#slide2:checked ~ .slider .slide2,
-#slide3:checked ~ .slider .slide3 {
-  z-index: 1;
-  opacity: 1;
 }
 main {
   width: 1440px;
