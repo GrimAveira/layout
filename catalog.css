@@ -147,207 +147,161 @@ nav li:nth-child(5) {
 main {
   width: 1440px;
   margin: 0 auto;
-  padding: 0 140px;
-}
-.products {
-  margin-top: 80px;
+  padding: 55px 140px 0 140px;
   display: flex;
-  border-bottom: 2px solid #eeeeee;
 }
-.products li {
-  margin-right: 100px;
-}
-.products h3 {
-  margin-top: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 24px;
+.filters h3 {
+  font-weight: bold;
+  font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
-.products a {
-  margin-top: 32px;
-  border-radius: 3px;
-  width: 160px;
-  height: 50px;
+.cost-container {
+  width: 260px;
+  position: relative;
+}
+.cost-container h3 {
+  letter-spacing: 0.04em;
+}
+.slider {
+  margin-top: 48px;
+  height: 80px;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+}
+.circle {
+  cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 80px;
+  height: 20px;
+  width: 20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.products a:active {
-  box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+.circle:nth-child(1) {
+  margin-left: 18px;
 }
-.products p {
-  margin-top: 16px;
-}
-.red-a {
-  background: #fb565a;
-}
-.green-a {
-  background: #00ca74;
-}
-.yellow-a {
-  background: #efc84a;
-}
-.red-a:hover {
-  background: #e74246;
-}
-.green-a:hover {
-  background: #00bc6c;
-}
-.yellow-a:hover {
-  background: #eab534;
-}
-.red-a:active {
-  background: #d7373b;
-}
-.green-a:active {
-  background: #00aa62;
-}
-.yellow-a:active {
-  background: #e5a722;
-}
-.about-container {
-  display: flex;
-}
-.about {
-  margin-top: 74px;
-}
-.about p:nth-child(2) {
-  font-weight: 500;
-  line-height: 45px;
-  font-size: 45px;
-}
-.about p:nth-child(3) {
-  margin-top: 32px;
-}
-.about p:nth-child(4) {
-  font-weight: 700;
-  margin-top: 40px;
-  text-transform: uppercase;
-}
-.about ul {
-  margin-top: 24px;
-  margin-left: 1px;
-  line-height: 24px;
-}
-.about li {
-  display: flex;
-}
-.about li:nth-child(1) {
-  margin-bottom: 24px;
-}
-.about li:nth-child(2) {
-  margin-bottom: 24px;
-}
-.about li::before {
+.circle::after {
   content: "";
+  height: 4px;
+  width: 4px;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.green-line {
+  width: 122px;
+  height: 2px;
+  background-color: #00ca74;
+}
+.gray-line {
+  width: 59px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+.value-container {
+  margin-top: 14px;
   display: flex;
   align-items: center;
+  height: 38px;
+  text-transform: uppercase;
+  line-height: 22px;
+  justify-content: space-between;
+}
+.value-container p {
+  margin-right: 12px;
+}
+.first-range,
+.second-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.first-range div,
+.second-range div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80px;
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+.active-filters {
+  margin-top: 54px;
+}
+.active-filters input {
+  display: none;
+}
+.active-filters li {
+  line-height: 20px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+}
+.controls-grid label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25px;
-  height: 2px;
-  background-color: #fb565a;
-  margin-top: 11px;
+  height: 25px;
+  border: 4px solid #b8b8b8;
+  border-radius: 50%;
   margin-right: 10px;
 }
-.achivments {
-  margin-top: 40px;
-  margin-left: 800px;
-  position: absolute;
+#grid1:checked ~ .controls-grid li:nth-child(1) label::after,
+#grid2:checked ~ .controls-grid li:nth-child(2) label::after,
+#grid3:checked ~ .controls-grid li:nth-child(3) label::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
 }
-.achivments > p {
-  margin-top: 29px;
-  margin-left: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.achivments ol {
-  margin-top: 5px;
-  display: flex;
-}
-.achivments div {
-  display: flex;
-}
-.percent-value {
-  margin-top: 53px;
-
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 10.06px;
-}
-.percent {
+.feature-filter {
   margin-top: 44px;
-  margin-right: 21px;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 10.06px;
 }
-.percent-value-explanation {
-  margin-top: 38px;
-  margin-left: 1px;
-  font-size: 16px;
+.feature-filter li {
+  margin-bottom: 17px;
+}
+.controls-features label {
+  background-image: url(./img/checkbox-off.png);
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+}
+#feature1:checked ~ .controls-features li:nth-child(1) label,
+#feature2:checked ~ .controls-features li:nth-child(2) label,
+#feature3:checked ~ .controls-features li:nth-child(3) label,
+#feature4:checked ~ .controls-features li:nth-child(4) label,
+#feature5:checked ~ .controls-features li:nth-child(5) label {
+  background-image: url(./img/checkbox-on.png);
+  width: 27px;
+  height: 23px;
+  margin-right: 8px;
+}
+.filters button {
+  margin-top: 48px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
   line-height: 18px;
 }
-.work-examples {
-  margin-top: 73px;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-  height: 184px;
-}
-.work-examples ul {
-  display: flex;
-}
-.work-examples img {
-  opacity: 0.3;
-}
-.work-examples img:hover {
-  opacity: 1;
-}
-.work-examples img:active {
-  opacity: 0.1;
-}
-.work-examples li:nth-child(1) {
-  margin-left: 31px;
-  margin-top: 62px;
-}
-.work-examples li:nth-child(2) {
-  margin-left: 94px;
-  margin-top: 46px;
-}
-.work-examples li:nth-child(2)::before {
-  position: relative;
-  content: " ";
-  border-left: 2px solid #eeeeee;
-  padding-bottom: 33px;
-  right: 45px;
-  bottom: 54px;
-}
-.work-examples li:nth-child(3) {
-  margin-left: 101px;
-  margin-top: 65px;
-}
-.work-examples li:nth-child(3)::before {
-  position: relative;
-  content: " ";
-  border-left: 2px solid #eeeeee;
-  padding-bottom: 33px;
-  right: 57px;
-  bottom: 38px;
-}
-.work-examples li:nth-child(4) {
-  margin-left: 119px;
-  margin-top: 52px;
-}
-.work-examples li:nth-child(4)::before {
-  position: relative;
-  content: " ";
-  border-left: 2px solid #eeeeee;
-  padding-bottom: 33px;
-  right: 63px;
-  bottom: 57px;
-}
+
 footer {
   padding-top: 80px;
   margin: 0 auto;
