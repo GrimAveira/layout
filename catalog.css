@@ -245,6 +245,15 @@ main {
   display: flex;
   align-items: center;
 }
+.active-filters button:hover {
+  background-color: #dfdfdf;
+}
+.active-filters button:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1) inset;
+}
 .controls-grid label {
   display: flex;
   align-items: center;
@@ -300,6 +309,9 @@ main {
   font-weight: 500;
   line-height: 18px;
 }
+.sorting-template-pagination {
+  padding-left: 140px;
+}
 .sorting input {
   display: none;
 }
@@ -309,7 +321,6 @@ main {
   text-transform: uppercase;
 }
 .sorting {
-  margin-left: 140px;
   display: flex;
   align-items: center;
 }
@@ -353,7 +364,6 @@ main {
 }
 .templates-container {
   margin-top: 53px;
-  margin-left: 140px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -444,9 +454,56 @@ main {
 .tag h3:active {
   color: #b2b2b2;
 }
-
+.pagination {
+  margin-top: 27px;
+  display: flex;
+}
+.pagination ol {
+  display: flex;
+  align-items: center;
+}
+.pagination li {
+  margin-right: 11px;
+}
+.pagination ol button {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 4px;
+}
+.pagination > button {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 4px;
+}
+.pagination button:hover {
+  background-color: #dfdfdf;
+}
+.pagination button:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1) inset;
+  background-color: #d5d5d5;
+  color: #959595;
+}
 footer {
-  padding-top: 80px;
+  padding-top: 60px;
   margin: 0 auto;
 }
 .map {
